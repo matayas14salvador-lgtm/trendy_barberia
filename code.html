@@ -1,0 +1,470 @@
+<!DOCTYPE html><html class="light" lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Trendy Spa For Men | Barbería &amp; Grooming Premium</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=Hanken+Grotesk:wght@400;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed-dim": "#b6c7e9",
+                        "surface-dim": "#d9dadb",
+                        "surface-container-highest": "#e1e3e4",
+                        "inverse-on-surface": "#f0f1f2",
+                        "secondary-fixed-dim": "#e9c176",
+                        "surface-container-low": "#f3f4f5",
+                        "on-primary": "#ffffff",
+                        "surface-bright": "#f8f9fa",
+                        "on-background": "#191c1d",
+                        "primary": "#00030a",
+                        "surface-container": "#edeeef",
+                        "surface-container-high": "#e7e8e9",
+                        "background": "#f8f9fa",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed": "#ffdea5",
+                        "on-surface": "#191c1d",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "tertiary": "#0d0000",
+                        "surface-variant": "#e1e3e4",
+                        "surface-tint": "#4e5f7c",
+                        "inverse-primary": "#b6c7e9",
+                        "on-tertiary-fixed": "#410001",
+                        "surface": "#f8f9fa",
+                        "on-error-container": "#93000a",
+                        "tertiary-container": "#440001",
+                        "on-error": "#ffffff",
+                        "on-primary-fixed": "#081c36",
+                        "secondary-container": "#fed488",
+                        "on-tertiary-fixed-variant": "#930004",
+                        "on-secondary-container": "#785a1a",
+                        "on-primary-fixed-variant": "#364763",
+                        "on-surface-variant": "#44474d",
+                        "secondary": "#775a19",
+                        "error": "#ba1a1a",
+                        "outline": "#75777e",
+                        "primary-fixed": "#d6e3ff",
+                        "on-secondary-fixed": "#261900",
+                        "on-secondary-fixed-variant": "#5d4201",
+                        "tertiary-fixed-dim": "#ffb4a9",
+                        "on-tertiary-container": "#f34335",
+                        "on-primary-container": "#7586a5",
+                        "primary-container": "#0a1d37",
+                        "inverse-surface": "#2e3132",
+                        "tertiary-fixed": "#ffdad5",
+                        "error-container": "#ffdad6",
+                        "outline-variant": "#c5c6ce"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "margin-mobile": "16px",
+                        "section-gap": "80px",
+                        "base": "8px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "body-md": ["Hanken Grotesk"],
+                        "label-caps": ["Hanken Grotesk"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .dotted-leader::after {
+            content: "";
+            flex-grow: 1;
+            border-bottom: 1px dotted #75777e;
+            margin: 0 12px;
+            margin-bottom: 5px;
+        }
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+        .reveal-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- Header / TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-secondary/20 transition-all duration-300">
+<nav class="flex justify-between items-center max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop py-4">
+<div class="font-display-lg text-[24px] md:text-[32px] font-bold text-primary tracking-tighter">
+                Trendy Spa For Men
+            </div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-body-md text-body-md uppercase tracking-wider text-on-surface-variant hover:text-secondary transition-all" href="#services">Services</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-on-surface-variant hover:text-secondary transition-all" href="#gallery">Gallery</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-on-surface-variant hover:text-secondary transition-all" href="#about">Contact</a>
+<button class="bg-primary text-on-primary px-6 py-2 border border-secondary font-label-caps uppercase tracking-widest hover:bg-secondary transition-colors duration-300">
+                    Book Now
+                </button>
+</div>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" style="font-size: 32px;">menu</span>
+</button>
+</nav>
+</header>
+<!-- Hero Section -->
+<section class="relative h-screen min-h-[700px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0 scale-105">
+<img alt="Master barber performing a precision straight razor shave on a client." class="w-full h-full object-cover brightness-50 contrast-125" src="https://lh3.googleusercontent.com/aida/AP1WRLsW5Zt8o__jQKXyo4TJsp79-m9X6ZiV4uoveXg9_ZRD9UHDurmrJiff0YF4RAyEcqrZz0IrbqvINH2m-oMM8QBuHNNXhuayIvt1qh09LeHPMPBQJpwdvZBkTEHVnsJBUNeizbpwirtb0xwfz3JG1jo160d547r3XuZBUj1bV82NjMOX1vvsQkBlU2F6N2EcvlwA4yG0m2yXeSc7VpNvqES0s4V1aBe61MNWoZuzkx4Ay0w1_8Ckx4l10Tz7">
+<div class="absolute inset-0 bg-gradient-to-r from-primary/80 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop w-full">
+<div class="max-w-2xl reveal-on-scroll visible">
+<span class="font-label-caps text-secondary-fixed-dim uppercase tracking-[0.3em] mb-4 block">Establecido 2018</span>
+<h1 class="font-display-lg text-white text-[48px] md:text-[80px] leading-[1.1] mb-6">
+                    Donde la Tradición se Une con el <span class="italic font-normal text-secondary-fixed">Estilo</span>
+</h1>
+<p class="font-body-md text-body-lg text-surface-variant mb-10 max-w-lg">
+                    Servicios de barbería de primera clase para el hombre moderno que valora la precisión, el detalle y la excelencia.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-secondary text-white px-10 py-4 font-label-caps uppercase tracking-widest border border-secondary hover:bg-primary transition-all duration-300">
+                        Reserva tu Cita
+                    </button>
+<button class="bg-transparent text-white px-10 py-4 font-label-caps uppercase tracking-widest border border-white/30 hover:border-white transition-all duration-300">
+                        Ver Servicios
+                    </button>
+</div>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+<span class="material-symbols-outlined text-white/50">expand_more</span>
+</div>
+</section><section class="py-section-gap" id="about">
+<div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
+<div class="reveal-on-scroll space-y-8">
+<div>
+<span class="font-label-caps text-secondary uppercase tracking-[0.2em] mb-4 block">Reserva en Línea</span>
+<h2 class="font-display-lg text-headline-lg text-primary mb-8 leading-tight">Agenda tu Experiencia Premium</h2>
+</div>
+<form class="space-y-6" onsubmit="event.preventDefault(); alert('¡Reserva confirmada! Se ha enviado un comprobante a tu correo electrónico.');">
+<div class="grid grid-cols-1 gap-6">
+<div class="flex flex-col gap-2">
+<label class="font-label-caps text-xs uppercase text-on-surface-variant">Servicio</label>
+<select class="w-full bg-surface-container-low border border-outline-variant p-4 font-body-md focus:outline-none focus:border-secondary">
+<option>Corte de Cabello</option>
+<option>Afeitado Clásico</option>
+<option>Tratamientos Faciales</option>
+</select>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col gap-2">
+<label class="font-label-caps text-xs uppercase text-on-surface-variant">Fecha</label>
+<input class="w-full bg-surface-container-low border border-outline-variant p-4 font-body-md focus:outline-none focus:border-secondary" type="date">
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-caps text-xs uppercase text-on-surface-variant">Horario</label>
+<select class="w-full bg-surface-container-low border border-outline-variant p-4 font-body-md focus:outline-none focus:border-secondary">
+<option>10:00 AM</option>
+<option>11:00 AM</option>
+<option>12:00 PM</option>
+<option>01:00 PM</option>
+<option>04:00 PM</option>
+<option>05:00 PM</option>
+</select>
+</div>
+</div>
+</div>
+<button class="w-full bg-primary text-white py-4 font-label-caps uppercase tracking-widest hover:bg-secondary transition-all duration-300" type="submit">
+            Confirmar Reserva
+        </button>
+</form>
+<div class="pt-6 border-t border-outline-variant">
+<p class="font-body-md text-sm text-on-surface-variant mb-4">¿Prefieres atención inmediata?</p>
+<a class="flex items-center justify-center gap-3 w-full bg-[#25D366] text-white py-4 font-label-caps uppercase tracking-widest hover:brightness-110 transition-all duration-300" href="#">
+<svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.438 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path></svg>
+            Reservar por WhatsApp
+        </a>
+</div>
+</div>
+<div class="bg-primary p-12 text-white reveal-on-scroll">
+<h3 class="font-headline-lg text-headline-lg mb-10 text-secondary-fixed">Carta de Servicios</h3>
+<div class="space-y-8">
+<div class="flex items-end font-body-md text-lg dotted-leader">
+<span class="font-bold">Corte Clásico</span>
+<span class="text-secondary-fixed font-bold">$380</span>
+</div>
+<div class="flex items-end font-body-md text-lg dotted-leader">
+<span class="font-bold">Barba Pro</span>
+<span class="text-secondary-fixed font-bold">$250</span>
+</div>
+<div class="flex items-end font-body-md text-lg dotted-leader">
+<span class="font-bold">Combo (Corte + Barba)</span>
+<span class="text-secondary-fixed font-bold">$550</span>
+</div>
+<div class="flex items-end font-body-md text-lg dotted-leader">
+<span class="font-bold">Color Camuflaje</span>
+<span class="text-secondary-fixed font-bold">$400</span>
+</div>
+<div class="flex items-end font-body-md text-lg dotted-leader">
+<span class="font-bold">Facial Express</span>
+<span class="text-secondary-fixed font-bold">$320</span>
+</div>
+<div class="flex items-end font-body-md text-lg dotted-leader">
+<span class="font-bold">Manicure Masculino</span>
+<span class="text-secondary-fixed font-bold">$300</span>
+</div>
+</div>
+<button class="w-full mt-12 bg-white text-primary py-4 font-label-caps uppercase tracking-widest hover:bg-secondary-fixed transition-colors duration-300">
+                        Descargar Menú Completo
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-section-gap bg-surface" id="services">
+<div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div class="reveal-on-scroll visible">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-2">Excelencia en Grooming</h2>
+<p class="font-body-md text-on-surface-variant">Un ritual de cuidado diseñado específicamente para el caballero contemporáneo.</p>
+</div>
+<div class="hidden md:block h-[1px] flex-grow mx-12 bg-outline-variant mb-4"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<div class="group reveal-on-scroll border border-outline-variant p-8 hover:bg-primary transition-all duration-500 visible">
+<div class="mb-8 w-12 h-12 flex items-center justify-center bg-secondary-container text-on-secondary-container group-hover:bg-secondary group-hover:text-white transition-colors duration-500">
+<span class="material-symbols-outlined">content_cut</span>
+</div>
+<h3 class="font-headline-lg text-[24px] mb-4 text-primary group-hover:text-white transition-colors duration-500">Corte de Cabello</h3>
+<p class="font-body-md text-on-surface-variant group-hover:text-surface-variant mb-8 transition-colors duration-500">
+                        Corte personalizado que incluye lavado, asesoría de imagen y estilizado con productos de alta gama.
+                    </p>
+<div class="flex items-center font-label-caps text-secondary uppercase group-hover:text-secondary-fixed transition-colors duration-500">
+<span class="">Desde $350</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group reveal-on-scroll border border-outline-variant p-8 hover:bg-primary transition-all duration-500 visible">
+<div class="mb-8 w-12 h-12 flex items-center justify-center bg-secondary-container text-on-secondary-container group-hover:bg-secondary group-hover:text-white transition-colors duration-500">
+<span class="material-symbols-outlined">face_5</span>
+</div>
+<h3 class="font-headline-lg text-[24px] mb-4 text-primary group-hover:text-white transition-colors duration-500">Afeitado Clásico</h3>
+<p class="font-body-md text-on-surface-variant group-hover:text-surface-variant mb-8 transition-colors duration-500">
+                        Ritual de toalla caliente, espuma artesanal y afeitado con navaja libre para una suavidad inigualable.
+                    </p>
+<div class="flex items-center font-label-caps text-secondary uppercase group-hover:text-secondary-fixed transition-colors duration-500">
+<span class="">Desde $280</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group reveal-on-scroll border border-outline-variant p-8 hover:bg-primary transition-all duration-500 visible">
+<div class="mb-8 w-12 h-12 flex items-center justify-center bg-secondary-container text-on-secondary-container group-hover:bg-secondary group-hover:text-white transition-colors duration-500">
+<span class="material-symbols-outlined">spa</span>
+</div>
+<h3 class="font-headline-lg text-[24px] mb-4 text-primary group-hover:text-white transition-colors duration-500">Tratamientos Faciales</h3>
+<p class="font-body-md text-on-surface-variant group-hover:text-surface-variant mb-8 transition-colors duration-500">
+                        Limpieza profunda e hidratación diseñada para la piel masculina, reduciendo fatiga y signos de estrés.
+                    </p>
+<div class="flex items-center font-label-caps text-secondary uppercase group-hover:text-secondary-fixed transition-colors duration-500">
+<span class="">Desde $450</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery Section (Bento Grid) -->
+<section class="py-section-gap overflow-hidden bg-surface-container-low" id="gallery">
+<div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop">
+<h2 class="font-headline-lg text-headline-lg text-center mb-16 reveal-on-scroll visible">La Experiencia Trendy</h2>
+<div class="grid grid-cols-1 md:grid-cols-12 grid-rows-2 gap-4 h-auto md:h-[800px]">
+<div class="md:col-span-8 md:row-span-2 relative group overflow-hidden reveal-on-scroll visible">
+<img alt="Detailed close-up of a high-end grooming session showing meticulous precision work in a luxury spa setting." class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/AP1WRLsW5Zt8o__jQKXyo4TJsp79-m9X6ZiV4uoveXg9_ZRD9UHDurmrJiff0YF4RAyEcqrZz0IrbqvINH2m-oMM8QBuHNNXhuayIvt1qh09LeHPMPBQJpwdvZBkTEHVnsJBUNeizbpwirtb0xwfz3JG1jo160d547r3XuZBUj1bV82NjMOX1vvsQkBlU2F6N2EcvlwA4yG0m2yXeSc7VpNvqES0s4V1aBe61MNWoZuzkx4Ay0w1_8Ckx4l10Tz7">
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="text-white font-label-caps tracking-[0.4em] text-lg uppercase">Meticulosidad</span>
+</div>
+</div>
+<div class="md:col-span-4 md:row-span-1 relative group overflow-hidden reveal-on-scroll visible">
+<img alt="Exterior storefront of Trendy Spa For Men showing a sophisticated and modern facade with classic barber accents." class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/AP1WRLsNutHHEQ_f2Jf-AT2YP2jXKVppZj2ApzUOhX7QbagCdlEQ1AxSGRy9MtDJxgt3SV9shqn6TYtq2cko4weDiXouOUY1APgYfqAjY_QveltZvtGAC8zGu6eEBsf02owPI_4n73qzZwDcRMSEdFWvrAJUK8TJtFOhR1qk7yHV0coZycbViSOXIPghLhdqZf01TaF1cResnW68laWKAhafGedMzapmJ2UiiAI_IPduKIzwrjcKIQzNtqbQwSPu">
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="text-white font-label-caps tracking-[0.4em] text-lg uppercase">Nuestra Sede</span>
+</div>
+</div>
+<div class="md:col-span-4 md:row-span-1 relative group overflow-hidden reveal-on-scroll visible">
+<div class="bg-cover bg-center w-full h-full transition-transform duration-700 group-hover:scale-110" data-alt="Minimalist interior of a luxury men's spa featuring leather chairs, dark wood accents, and polished gold trim under soft, warm lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCqme_0LTNa3BSp5efwRW4il7XWH0AzVnd742n6yaJ5b9nf6b1SRWNH7O40zCcWHxjNi-74tNzB3-YstYgBroRM-ohHiRacPNnjyw_3AMzdf8vY36bodb_HjGGEiNJUFR2Ku4HYATT4vUgBuJw0UypY6d_0DlonWEGgXmaLXuFakHzRH-h2U1jD729-ZS-HBwwmpctRi8dxsMh0kqwT4tat0Q4iSOuLaEp3Skya6CSFemeyRPB1NkbL8uaYIty4e8nv7MtZkGMdQaX-')"></div>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="text-white font-label-caps tracking-[0.4em] text-lg uppercase">Ambiente Relax</span>
+</div>
+</div>
+</div>
+</div>
+</section><section class="py-section-gap bg-surface" id="testimonials">
+<div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop">
+<h2 class="font-headline-lg text-headline-lg text-center mb-16 reveal-on-scroll visible">Lo que dicen nuestros clientes</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Testimonial 1 -->
+<div class="reveal-on-scroll p-8 border border-outline-variant bg-surface-container-lowest flex flex-col gap-4 visible">
+<div class="flex text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">star</span>
+</div>
+<p class="font-headline-lg text-lg italic text-primary leading-tight">"La mejor experiencia de barbería en la ciudad. La atención al detalle en el corte y el ritual del afeitado es simplemente excepcional."</p>
+<div class="mt-auto">
+<p class="font-label-caps text-secondary uppercase tracking-widest">Alejandro R.</p>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="reveal-on-scroll p-8 border border-outline-variant bg-surface-container-lowest flex flex-col gap-4 visible">
+<div class="flex text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">star</span>
+</div>
+<p class="font-headline-lg text-lg italic text-primary leading-tight">"Un ambiente sofisticado y relajante. El tratamiento facial me dejó renovado. Definitivamente se ha convertido en mi ritual mensual."</p>
+<div class="mt-auto">
+<p class="font-label-caps text-secondary uppercase tracking-widest">Carlos M.</p>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="reveal-on-scroll p-8 border border-outline-variant bg-surface-container-lowest flex flex-col gap-4 visible">
+<div class="flex text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">star</span>
+</div>
+<p class="font-headline-lg text-lg italic text-primary leading-tight">"Profesionalismo puro. Entienden perfectamente lo que buscas y el servicio al cliente es de primer nivel. Altamente recomendado."</p>
+<div class="mt-auto">
+<p class="font-label-caps text-secondary uppercase tracking-widest">Ricardo T.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About & Menu Section -->
+
+<!-- Location & Contact -->
+<section class="py-section-gap bg-surface-container-high">
+<div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="reveal-on-scroll visible">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-8">Visítanos</h2>
+<div class="space-y-6">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-secondary">location_on</span>
+<p class="font-body-md">Av. Insurgentes Sur 1234, Col. Del Valle Norte,<br>Ciudad de México, CP 03100</p>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-secondary">schedule</span>
+<div>
+<p class="font-body-md font-bold">Horarios:</p>
+<p class="font-body-md">Lunes - Viernes: 10:00 AM - 08:00 PM</p>
+<p class="font-body-md">Sábado: 09:00 AM - 06:00 PM</p>
+<p class="font-body-md">Domingo: Cerrado</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-secondary">call</span>
+<p class="font-body-md">+52 (55) 5678-1234</p>
+</div>
+</div>
+</div>
+<div class="h-[400px] border-4 border-white shadow-xl reveal-on-scroll overflow-hidden visible">
+<img alt="A sophisticated map view of Mexico City highlighting the central location of the barbershop using high-contrast branding colors." class="w-full h-full object-cover grayscale contrast-125" data-location="Mexico City" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8Nwp1uhmirCibAJNETQwK-vOcowpjWlDxZXyknxjr3AMZ7jt1fDBAvner5Ebf55xh6wI-XkfLPEEcKMhq_Sq96KFoHjHiDsl609_6X1iavhhwUqSCV6KzCf_7LsnNvz9gH-o4XBsuX1hdUl-lGKbE4lcoa5B4DIYqFpWjnmnkkBm5RucL8dOj91o-HOHqhZFQiDW1ooccF_YTeCI12uABp3Gzx64aV27cvxXwJlaQ2abseV2MVYdOi_iraUxEFGJenLx52rZsH81C">
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-primary text-on-primary mt-section-gap pt-16 pb-8">
+<div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-12">
+<div class="mb-8 md:mb-0">
+<div class="font-display-lg text-headline-lg text-secondary-fixed mb-4">Trendy Spa For Men</div>
+<p class="font-body-md text-on-primary/70 max-w-sm">Elevando los estándares del grooming masculino desde 2018.</p>
+</div>
+<div class="flex gap-8">
+<a class="text-on-primary/70 hover:text-secondary-fixed-dim transition-colors" href="#">
+<span class="sr-only">Instagram</span>
+<svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+<a class="text-on-primary/70 hover:text-secondary-fixed-dim transition-colors" href="#">
+<span class="sr-only">Facebook</span>
+<svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg>
+</a>
+</div>
+</div>
+<div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-on-primary/50 font-body-md text-sm">
+<p class="">© 2024 Trendy Spa For Men. All rights reserved.</p>
+<div class="flex gap-6 mt-4 md:mt-0">
+<a class="hover:text-secondary-fixed-dim transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-secondary-fixed-dim transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interactions and scroll effects
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.reveal-on-scroll').forEach(el => observer.observe(el));
+
+            // Smooth Scroll
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Navbar behavior on scroll
+            window.addEventListener('scroll', () => {
+                const header = document.querySelector('header');
+                if (window.scrollY > 50) {
+                    header.classList.add('py-2', 'shadow-md');
+                    header.classList.remove('py-4');
+                } else {
+                    header.classList.add('py-4');
+                    header.classList.remove('py-2', 'shadow-md');
+                }
+            });
+        });
+    </script>
+
+
+</body></html>
